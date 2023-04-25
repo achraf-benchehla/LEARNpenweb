@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LEARN4penweb</title>
+    <link rel="stylesheet" href="bench1.css" />
+    <script src="https://unpkg.com/typewriter-effect@2.18.0/dist/typewriter.min.js"></script>
+</head>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="menu">
+          <h2 class="logo">OWASP<span> TOP-10</span> LEARN4penweb </h2>
+          <h1 id="m44">PENTESTING WEB   </h1>
+          <div class="hamburger-menu">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+        <div class="main">
+          <header>
+            <div class="overlay">
+              <div class="inner">
+                <h2 class="title"> LEARN4penweb </h2>
+                <p>
+                    Bienvenue sur <strong>LEARN4penweb</strong>, la plateforme de référence pour apprendre et comprendre
+                    les 10 principales vulnérabilités du projet OWASP (Open Web Application Security Project) !
+                    Notre plateforme offre des consignes d'apprentissage interactif basee a des lab pour vous 
+                    familiariser avec les vulnérabilités les plus courantes qui peuvent affecter la sécurité des 
+                    applications web. Voici une description détaillée de ce que vous pouvez attendre de LEARN4penweb 
+                </p>
+                <button class="btn">Read more</button>
+              </div>
+            </div>
+          </header>
+        </div>
+
+        <div class="shadow one"></div>
+        <div class="shadow two"></div>
+      </div>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a href="#" style="--i: 0.05s;">Home</a>
+          </li>
+          <li>
+            <a class="x44" onclick="toggleSubtitles()"  style="--i: 0.1s;">TOP 10 Attaques</a>
+            <div class="subtitles">
+                <p class="subtitle">XSS</p>
+                <p class="subtitle">SQLI</p>
+                <p class="subtitle">FILE INCLUSION </p>
+                <p class="subtitle">BRUTE FORCE</p>
+                <p class="subtitle">IDS</p>
+                <p class="subtitle">.....</p>
+                <p class="subtitle">.....</p>
+                <p class="subtitle">....</p>
+                <p class="subtitle">.....</p>
+                <p class="subtitle">......</p>
+              </div>
+              <style>
+                .x44 {
+                  cursor: pointer;
+                  font-size: 24px;
+                  font-weight: bold;
+                  margin-bottom: 10px;
+                }
+            
+                .subtitles {
+                  max-height: 0;
+                  color: cyan;
+                  overflow: hidden;
+                  transition: max-height 0.5s ease-in-out;
+                }
+            
+                .subtitles.show {
+                  max-height: 400px;
+                  transition: max-height 0.5s ease-in-out;
+                }
+            
+                .subtitle {
+                  font-size: 16px;
+                  margin-bottom: 5px;
+                }
+              </style>
+          </li>
+          <li>
+            <a href="#" style="--i: 0.15s;">RESOURCES</a>
+          </li>
+          <li>
+            <a href="#" style="--i: 0.2s;">TOOLS</a>
+          </li>
+          <li>
+            <a href="#" style="--i: 0.25s;">LEARN4penweb</a>
+          </li>
+          <li>
+            <a href="#" style="--i: 0.3s;">Contact & INFO </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+   
+    
+      
+    
+      <script>
+        function toggleSubtitles() {
+          var subtitles = document.querySelector('.subtitles');
+          subtitles.classList.toggle('show');
+        }
+      </script>
+
+    <script src="bench2.js"></script>
+  </body>
+</html>
